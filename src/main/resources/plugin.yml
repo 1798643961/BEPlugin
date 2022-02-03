@@ -1,0 +1,8 @@
+name: BEPlugin
+version: '${version}'
+main: com.be.BEPlugin
+author: 1798643961
+api-version: 1.18
+depend:
+  - Slimefun
+  - ExoticGarden
