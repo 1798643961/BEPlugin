@@ -1,10 +1,7 @@
 package com.be;
 
 import com.be.fixes.HeadDropFix;
-import com.be.registry.BEFoodRegistry;
-import com.be.registry.BEItemGroups;
-import com.be.registry.BEPlants;
-import com.be.registry.BETrees;
+import com.be.registry.*;
 import com.be.utils.BEListener;
 import com.be.utils.RegistryHandler;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
@@ -37,6 +34,7 @@ public final class BEPlugin extends JavaPlugin implements SlimefunAddon {
         BETrees.onTreesRegister();
         BEFoodRegistry.register(this, BEItemGroups.miscItemGroup, BEItemGroups.drinksItemGroup, BEItemGroups.foodItemGroup);
         HeadDropFix.onHeadDropFix();
+        BECommands.onCommandsRegister();
         Bukkit.getPluginManager().registerEvents(BEListener.getInstance(), this);
 
         // Auto Updater

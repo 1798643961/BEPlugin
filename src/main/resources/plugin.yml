@@ -6,3 +6,16 @@ api-version: 1.18
 depend:
   - Slimefun
   - ExoticGarden
+
+commands:
+  spawn:
+    description: Teleport to the Spawn
+  setspawn:
+    description: Set the Spawn point
+permissions:
+  spawn.admin:
+    description: Allows you to set the spawn
+    default: op
+  spawn.spawn:
+    description: Allows you to go to the spawn
+    default: false

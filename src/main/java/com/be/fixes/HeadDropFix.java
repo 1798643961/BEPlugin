@@ -20,9 +20,9 @@ public class HeadDropFix {
     public static boolean scanItemFrame = false;
 
     public static void onHeadDropFix() {
-        HeadDropFix.dropSkull = BEPlugin.getInstance().getConfig().getBoolean("options.drop-skull");
-        HeadDropFix.scanItemFrame = BEPlugin.getInstance().getConfig().getBoolean("options.scan-itemframe");
-        HeadDropFix.scanChunk = BEPlugin.getInstance().getConfig().getBoolean("options.scan-chunk",true);
+        HeadDropFix.dropSkull = BEPlugin.getInstance().getConfig().getBoolean("fixes.drop-skull");
+        HeadDropFix.scanItemFrame = BEPlugin.getInstance().getConfig().getBoolean("fixes.scan-itemframe");
+        HeadDropFix.scanChunk = BEPlugin.getInstance().getConfig().getBoolean("fixes.scan-chunk",true);
         Bukkit.getWorlds().forEach((world -> {
             if (scanItemFrame) {
                 for (Entity entity : world.getEntities()) {
