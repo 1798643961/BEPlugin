@@ -1,2 +1,5 @@
 options:
   auto-update: false
+  drop-skull: true
+  scan-itemframe: true
+  scan-chunk: true

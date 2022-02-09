@@ -29,6 +29,7 @@ dependencies {
     compileOnly 'io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT'
     compileOnly 'com.github.Slimefun:Slimefun4:RC-30'
     implementation files('lib/ExoticGarden-CN.jar')
+    implementation files('paper-1.18.1.jar')
 }
 
 def targetJavaVersion = 17
